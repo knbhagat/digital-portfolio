@@ -1,0 +1,86 @@
+header {
+    height: 100vh;
+    padding-top: 6rem;
+    overflow: hidden;
+}
+
+.header-container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.button-container {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header-socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    gap: 0.5rem;
+    left:0;
+    bottom:3rem;
+}
+
+.header-socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-bg-variant);
+}
+
+.header-socials::after:hover {
+    background-color: var(--color-bg);
+}
+
+.myself {
+    padding-top: 3rem;
+    width: 18rem;
+    height: 25rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.myself img {
+    border-radius: 15rem 15rem 0 0;
+    overflow: hidden;
+}
+
+.scrollDownDivision {
+    display: flex;
+    position: absolute;
+    right: -2.5rem;
+    bottom: 5rem;
+    font-weight: 200;
+    transform: rotate(90deg);
+    gap: 0.25rem;
+}
+
+.arrow {
+    position: relative;
+    top:0.3rem;
+    color: var(--color-bg-variant);
+    transition: all 2s;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        height: 68vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header-socials, .scrollDown, .arrow {
+        display: none;
+    }
+}

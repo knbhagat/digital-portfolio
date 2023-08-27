@@ -1,0 +1,81 @@
+#about .container {
+    background-color: #494848;
+    z-index: 2;
+    border-radius: 10%;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+}
+
+#about {
+    background-color: var(--color-bg);
+    height: fit-content;
+}
+
+.content-container {
+    padding: 3rem;
+    padding-bottom: 6rem;
+}
+
+.content-container > h2 {
+    color: var(--color-primary);
+}
+
+.about-cards {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.about-box {
+    padding: 1rem;
+    width: 8rem;
+    height: max-content;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: var(--color-bg);
+}
+
+.about-box > .icons {
+    color: var(--color-primary-variant);
+    transition: all 1s;
+}
+
+.about-box:hover {
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+    transition: all 0.5s;
+}
+
+.about-box:hover .icons {
+    color: white;
+    transition: all 0.5s;
+}
+
+#about .par {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    left: 50%;
+    text-align: left;
+    justify-content: left;
+    transform: translateX(-50%);
+}
+
+#about p {
+    color : azure;
+}
+
+#about a {
+    position: relative;
+    top: 2rem;
+    color: #494848;
+    background-color: var(--color-primary);
+}
+
+#about a:hover {
+    background-color: #494848;
+    color: var(--color-primary);
+}

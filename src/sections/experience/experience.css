@@ -1,0 +1,116 @@
+.experience-container {
+    text-align: center;
+    width: 50%;
+}
+
+.experience-container > h2 {
+    color: var(--color-primary);
+}
+
+.language-container {
+    margin-top: 3.5rem;
+    background-color: #494848;
+    padding: 2rem 4rem;
+    border-radius: 1.75rem;
+    border: 1px solid transparent;
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.language-container > h3 {
+    color: var(--color-primary);
+}
+ 
+.language-container:hover {
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+    transition: all 0.5s;
+}
+
+.experience-content {
+    position: relative;
+    display: grid;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 4rem;
+    text-align: left;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experience-specific {
+    display: flex;
+    gap: 3rem;
+    height: 5rem;
+}
+
+.experience-specific > h4 {
+    align-self: center;
+}
+
+.percentage-bar {
+    width:50px;
+    height:50px;
+    position: relative;
+}
+
+.outer {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    padding: 9.375px;
+    border: 1px solid var(--color-light);
+}
+
+.inner {
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-light);
+}
+
+.percent-num {
+    font-weight: 600;
+}
+
+#experience svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+}
+
+#experience circle {
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 9.375px;
+    stroke-dashoffset: 0;
+    /*
+    197 is full dashArray
+    */
+}
+
+.sixty-percent {
+    stroke-dasharray: 120.504;
+}
+
+.seventyFive-percent {
+    stroke-dasharray: 150.63;
+}
+
+.ninety-percent {
+    stroke-dasharray: 180.756;
+}
+
+
+
+
+
