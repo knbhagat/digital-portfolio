@@ -1,6 +1,12 @@
+#experience {
+    height: fit-content;
+    padding: 3rem 0;
+}
+
 .experience-container {
     text-align: center;
     width: 50%;
+    height: fit-content;
 }
 
 .experience-container > h2 {
@@ -108,6 +114,20 @@
 
 .ninety-percent {
     stroke-dasharray: 180.756;
+}
+
+@media (max-width: 800px) {
+    .experience-content {
+        grid-template-columns: 1fr;
+        transform: translateX(-30%);
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-content {
+        transform: translateX(-50%);
+        padding: 2rem 1rem;
+    }
 }
 
 

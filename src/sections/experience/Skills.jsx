@@ -43,7 +43,7 @@ const Skills = () => {
                             </div>
                         </div>
                         </div>
-                        <Circle />
+                        <Circle percentage = 'ninety-percent'/>
                     </div>
                     <h4 className='text-light'> CSS </h4>
                     </div>

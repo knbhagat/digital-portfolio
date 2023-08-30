@@ -10,11 +10,11 @@
 #about {
     background-color: var(--color-bg);
     height: fit-content;
+    padding-bottom: 3rem 0;
 }
 
 .content-container {
     padding: 3rem;
-    padding-bottom: 6rem;
 }
 
 .content-container > h2 {

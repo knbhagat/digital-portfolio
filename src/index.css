@@ -73,17 +73,17 @@ a:hover {
 .btn-primary {
     background-color: var(--color-bg-variant);
     color: var(--color-bg);
-    border-color: var(--color-bg);
+    border-color: transparent;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-bg);
+    background-color: transparent;
     color: var(--color-bg-variant);
     border-color: var(--color-bg-variant);
 }
 
 .btn-secondary {
-    background-color: var(--color-bg);
+    background-color: transparent;
     color: var(--color-bg-variant);
     border-color: var(--color-bg-variant);
 }
@@ -91,7 +91,7 @@ a:hover {
 .btn-secondary:hover {
     background-color: var(--color-bg-variant);
     color: var(--color-bg);
-    border-color: var(--color-bg);
+    border-color: transparent;
 }
 
 .text-light {
