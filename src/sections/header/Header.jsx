@@ -11,7 +11,7 @@ const Header = () => {
   const [index, setIndex] = useState(0) //checker for index
   const [isDeleting, setIsDeleting] = useState("false") //checker for deletion
   const [textType, setTextType] = useState('') //words being typed
-  const [typeTime, setTypeTime] = useState(300 - Math.random() * 100) //start time to tyoe, will get halved
+  const [typeTime, setTypeTime] = useState(200 - Math.random() * 100) //start time to tyoe, will get halved
   const wordsToBeRotated = ["Junior Developer","Software Engineer","UI/UX Designor", "College Student"]
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Header = () => {
     }
 
     if (isDeleting === "false" && update === whole) { //not changing to true
-      setTypeTime(2000);
+      setTypeTime(1000);
       setIsDeleting("true");
     } else if (isDeleting === "true" && update === '') {
       setIsDeleting("false");
