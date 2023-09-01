@@ -1,19 +1,20 @@
 import React from 'react'
 import './projects.css'
+import Video1 from "../../features/PacManGameVideo.mp4"
 import Img1 from "../../features/refereeWebpage.png"
 import Img2 from "../../features/more-pictures.jpg"
 import Img3 from "../../features/more-pictures1.jpg"
 import { useState } from 'react'
 
 const outGoingProjects = [{image : Img1, id : 1, title : 'Webscraping Prizepicks & Comparing Betting Odds', githubLink : "https://github.com/knbhagat/WebScrapingPrizePicksSite.git", button1 : "InProgress"}
-  ,{image : Img1, id : 2, title : 'Referee Chat AI Bot', githubLink: "https://github.com/knbhagat", button1 : 'InProgress'}
-  ,{image : Img1, id : 3, title : 'Premier League Stat Line', githubLink : "https://github.com/knbhagat", button1: "InProgress"}];
+  ,{image : Img1, id : 2, title : 'Soccer Referee Chat AI Bot', githubLink: "https://github.com/knbhagat", button1 : 'InProgress'}
+  ,{image : Img1, id : 3, title : 'Premier League Statistics Line', githubLink : "https://github.com/knbhagat", button1: "InProgress"}];
 
-const smallProjects = [{image : Img1, id : 1, title : 'Notes App', githubLink : "https://github.com/knbhagat/reactLearning.git", button1 : "Github", demo: "", button2 : "Live Demo"}
-  ,{image : Img1, id : 2, title : 'Bouncing DVD Image', githubLink: "https://github.com/knbhagat/dvdImageGame.git", button1 : 'Github', demo : "", button2: "Live Demo"}];
+const smallProjects = [{image : Img1, id : 1, title : 'Notes App', githubLink : "https://github.com/knbhagat/learning-react-project.git", button1 : "Github", demo: "", button2 : "Live Site"}
+  ,{image : Img1, id : 2, title : 'Bouncing DVD Image', githubLink: "https://github.com/knbhagat/dvdImageGame.git", button1 : 'Github', demo : "https://knbhagat.github.io/dvdImageGame/Bouncing.html", button2: "Live Site"}];
 
-const majorProjects = [{image : Img1, id : 1, title : 'Referee Assistance Webpage', githubLink : "https://github.com/knbhagat/soccerRefereeWebpage.git", button1 : "Github", demo: "", button2 : "Live Demo"}
-,{image : Img1, id : 2, title : 'Object Oriented Pac-Man Game', githubLink: "https://github.com/knbhagat/PacManGame.git", button1 : 'Github', demo : "", button2: "Live Demo"}];
+const majorProjects = [{image : Img1, id : 1, title : 'Referee Assistance Webpage', githubLink : "https://github.com/knbhagat/soccerRefereeWebpage.git", button1 : "Github", demo: "https://knbhagat.github.io/SoccerRefereeWebpage/refereeHomePage.html", button2 : "Live Site"}
+,{image : Img1, id : 2, title : 'Object Oriented Pac-Man Game', githubLink: "https://github.com/knbhagat/PacManGame.git", button1 : 'Github', demo : Video1 , button2: "Live Demo"}];
 
 
 
@@ -22,12 +23,12 @@ const Projects = () => {
   return (
       <article className = "portfolio-project-item">
       <div className = "portfolio-image">
-        <img src = {Img2} id = "more-projects"></img>
+        <img src = {Img2} alt = "image2"></img>
       </div>
       <h3>Other Projects</h3>
       <div className = "button-seperator" >
-        <a className = "btn-secondary btn-minContent" onClick = {miniProjects}> Mini Projects </a>
-        <a className = "btn-primary btn-minContent" onClick = {outGoing}> Ongoing Projects </a>
+        <a className = "btn-secondary btn-minContent" onClick = {miniProjects}>Mini Projects</a>
+        <a className = "btn-primary btn-minContent" onClick = {outGoing}>Ongoing Projects</a>
       </div>
       </article>
   )}
@@ -44,24 +45,24 @@ const Projects = () => {
         <>
           <article className = "portfolio-project-item">
           <div className = "portfolio-image">
-            <img src = {Img2} id = "more-projects"></img>
+            <img src = {Img2} alt = "image2"></img>
           </div>
           <h3>Other Projects</h3>
-          <div className = "button-seperator" id= "change-item2" >
-            <a className = "btn-secondary btn-minContent" onClick = {reset} id = "change-item1"> Lessen Projects </a>
-            <a className = "btn-primary btn-minContent" onClick = {outGoing}> Ongoing Projects </a>
+          <div className = "button-seperator">
+            <a className = "btn-secondary btn-minContent" onClick = {reset}>Lessen Projects</a>
+            <a className = "btn-primary btn-minContent" onClick = {outGoing}>Ongoing Projects</a>
           </div>
           </article>
           {smallProjects.map(({id, title, image, button1, githubLink, demo, button2}) => {
             return (
               <article key = {id} className = "portfolio-project-item">
               <div className = "portfolio-image">
-                <img src = {image}></img>
+                <img src = {image} alt = "image3"></img>
               </div>
               <h3> {title} </h3>
               <div className = "button-seperator">
-                <a href = {githubLink} className = "btn-secondary" target = "_blank"> {button1} </a>
-                <a href = {demo} className = "btn-primary" target = "_blank"> {button2} </a>
+                <a href = {githubLink} className = "btn-secondary" target = "_blank" rel = "noreferrer"> {button1} </a>
+                <a href = {demo} className = "btn-primary" target = "_blank" rel = "noreferrer"> {button2} </a>
               </div>
               </article>
             )})}
@@ -76,7 +77,7 @@ const Projects = () => {
         <>
           <article className = "portfolio-project-item">
           <div className = "portfolio-image">
-            <img src = {Img2} id = "more-projects"></img>
+            <img src = {Img2} alt = "image3"></img>
           </div>
           <h3>Other Projects</h3>
           <div className = "button-seperator" id= "change-item2" >
@@ -88,11 +89,11 @@ const Projects = () => {
             return (
               <article key = {id} className = "portfolio-project-item">
               <div className = "portfolio-image">
-                <img src = {image}></img>
+                <img src = {image} alt = "image2"></img>
               </div>
               <h3> {title} </h3>
               <div className = "button-seperator">
-                <a href = {githubLink} className = "text-secondary" target = "_blank"> {button1} </a>
+                <a href = {githubLink} className = "text-secondary" target = "_blank" rel = "noreferrer"> {button1} </a>
               </div>
               </article>
             )})}
@@ -114,12 +115,12 @@ const Projects = () => {
             return (
               <article key = {id} className = "portfolio-project-item">
               <div className = "portfolio-image">
-                <img src = {image}></img>
+                <img src = {image} alt = "image1"></img>
               </div>
               <h3> {title} </h3>
               <div className = "button-seperator">
-                <a href = {githubLink} className = "btn-secondary" target = "_blank"> {button1} </a>
-                <a href = {demo} className = "btn-primary" target = "_blank"> {button2} </a>
+                <a href = {githubLink} className = "btn-secondary" target = "_blank" rel = "noreferrer"> {button1} </a>
+                <a href = {demo} className = "btn-primary" target = "_blank" rel = "noreferrer"> {button2} </a>
               </div>
               </article>
             )})}

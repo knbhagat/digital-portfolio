@@ -55,6 +55,8 @@ a {
     transition: all 2s;
     color: var(--color-bg-variant);
     cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 a:hover {

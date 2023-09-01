@@ -49,7 +49,7 @@ const Header = () => {
       <div className = "container header-container">
         <h5> Hello I'm </h5>
         <h1> Krishaan Bhagat </h1>
-        <h5 className = "text-light">A {textType}</h5>
+        <h4>A <span className= "text-light">{textType}</span></h4>
         <div className = "button-container">
           <a className = "btn btn-secondary" href = {CoverLetter} download = {CoverLetter}>Download CV</a>
           <a className = "btn btn-primary" href = "#contacts"> Let's Connect </a>

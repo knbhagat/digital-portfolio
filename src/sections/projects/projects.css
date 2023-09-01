@@ -1,5 +1,5 @@
 #projects {
-    height: fit-content;
+    height: max-content;
     padding: 3rem 0;
 }
 
@@ -12,6 +12,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem 1rem;
     padding-top: 4rem;
+    height: max-content;
 }
 
 .portfolio-image {
@@ -29,11 +30,20 @@
     flex-direction: column;
     padding: 1rem;
     border-radius: 1rem;
-    height: min-content;
     width: 250px;
+    height: fit-content;
     background-color: #494848;
     transition: all 1s;
-    border: 1px solid transparent
+    border: 1px solid transparent;
+}
+
+#projects button{
+    text-align: left;
+}
+
+.portfolio-project-item button {
+    position: relative;
+    align-items: start;
 }
 
 .portfolio-project-item:hover {
@@ -67,23 +77,23 @@
 }
 
 #projects .btn-primary, #projects .btn-secondary {
-    padding: 0.1rem 0.5rem;
+    padding: 0.1rem 0.3rem;
 }
 
 .btn-minContent {
     width: min-content;
 }
 
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
     .portfolio-container {
-        gap: 1.5rem;
+        gap: 2rem 0;
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 600) {
+@media screen and (max-width: 620px) {
     .portfolio-container {
-        gap: 1rem;
+        gap: 2rem;
         grid-template-columns: 1fr;
     }
 }

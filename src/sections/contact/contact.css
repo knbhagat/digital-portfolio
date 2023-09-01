@@ -1,0 +1,94 @@
+#contact {
+    padding: 3rem 0;
+}
+#contact h2 {
+    color: var(--color-primary);
+}
+
+.contact-container {
+    position: relative;
+}
+
+.independent-contact {
+    position: relative;
+    padding-top: 5rem;
+    display: flex;
+    width: 50%;
+    gap: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    
+.contact-information {
+    flex: 1;
+    padding: 1rem;
+    background-color: var(--color-bg-variant);
+    border-radius: 4rem 4rem 0 0;
+    width: 300px;
+    text-align: center;
+    transition: all 1.5s;
+    color: var(--color-bg);
+    z-index: 2;
+}
+
+.contact-information > .text-light {
+    transition: all 1.5s;
+}
+
+
+.contact-information:hover .text-light {
+    color: white;
+}
+
+.contact-information:hover .rotate-icon {
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+   0% {
+    transform: rotate(0deg);
+   } 
+
+   25% {
+    transform: rotate(35deg);
+   }
+
+   50% {
+    transform: rotate(0deg);
+   }
+
+   75% {
+    transform: rotate(-35deg);
+   }
+
+   100% {
+    transform: rotate(0deg);
+   }
+}
+
+.contact-information:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-bg-variant);
+    color: white;
+}
+
+.public-contact {
+    background-color: #494848;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.input-style {
+    background-color: black;
+    color: var(--color-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
