@@ -25,6 +25,7 @@
 
 .portfolio-project-item {
     justify-self: center;
+    text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -32,9 +33,7 @@
     border-radius: 1rem;
     width: 250px;
     height: fit-content;
-    background-color: #494848;
     transition: all 1s;
-    border: 1px solid transparent;
 }
 
 #projects button{
@@ -61,6 +60,7 @@
 .button-seperator {
     display: flex;
     gap: 0.5rem;
+    justify-content: center;
 }
 
 #projects h3 {

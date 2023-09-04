@@ -1,11 +1,12 @@
 nav {
     position: fixed;
-    display: flex;;
-    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.9);
     width: max-content;
     z-index: 2;
     left: 50%;
-    bottom: 1.5rem;
+    bottom: 2.5rem;
     transform: translate(-50%, 0);
     padding: 0.5rem 1rem;
     border-radius: 3rem;
@@ -13,20 +14,19 @@ nav {
     backdrop-filter: blur(10px);
 }
 
-#meIcon {
-    position: relative;
-    margin-top: .1rem;
-}
-
-nav a {
+nav .icon {
     padding: .5rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
     cursor: pointer;
     border-radius: 50%;
 }
 
-nav a.activeIcon {
-    background-color: var(--color-bg);
+nav .icon:hover {
+    transform: scale(1.05);
+}
+
+nav .icon.activeIcon {
+    background-color: var(--color-bg-variant);
     color: white;
 }
 

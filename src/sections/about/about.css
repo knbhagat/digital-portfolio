@@ -1,5 +1,4 @@
 #about .container {
-    background-color: #494848;
     z-index: 2;
     border-radius: 10%;
     height: fit-content;
@@ -8,7 +7,6 @@
 }
 
 #about {
-    background-color: var(--color-bg);
     height: fit-content;
     padding-bottom: 3rem 0;
 }
@@ -32,7 +30,7 @@
     padding: 1rem;
     width: 8rem;
     height: max-content;
-    border: 1px solid black;
+    border: 1px solid #494848;
     border-radius: 1rem;
     background-color: var(--color-bg);
 }
@@ -71,11 +69,4 @@
 #about a {
     position: relative;
     top: 2rem;
-    color: #494848;
-    background-color: var(--color-primary);
-}
-
-#about a:hover {
-    background-color: #494848;
-    color: var(--color-primary);
 }

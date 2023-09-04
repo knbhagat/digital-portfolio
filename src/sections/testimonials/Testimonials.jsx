@@ -1,12 +1,11 @@
 import React from 'react'
 import './testimonials.css'
 import {AiOutlineArrowRight} from 'react-icons/ai'
-import {useRef, useState} from 'react'
+import {useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination} from 'swiper/modules';
 import Img1 from "../../features/mePicture.png"
 import Img2 from "../../features/Budha.png"
 
@@ -35,7 +34,7 @@ const Testimonials = () => {
       <h5 className='text-light'> My Recommendations </h5>
       <h2> Testimonials </h2>
       <div className='container testimonial-container'>
-        <Swiper pagination ={{dynamicBullets: true,}} modules={[Pagination, Navigation]} navigation={true} rewind = {true} className="mySwiper" >
+        <Swiper pagination ={{dynamicBullets: true,}} modules={[Pagination]} rewind = {true} className="mySwiper" >
         {recommendations.map(({image, title, rec, number, email, name}) => {
           return (
             <SwiperSlide key = {name}>

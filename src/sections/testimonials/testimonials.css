@@ -15,7 +15,6 @@
 .testimonial-context {
     flex: 1;
     position: relative;
-    background-color: #494848;
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
