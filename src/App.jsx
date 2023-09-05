@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import Header from './sections/header/Header'
 import Navigation from './sections/navigation/Navigation'
 import About from './sections/about/About'

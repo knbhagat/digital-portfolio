@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import './footer.css'
 import '../navigation/navigation.css'
 import {BsGithub} from 'react-icons/bs'
