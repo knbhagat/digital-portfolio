@@ -11,8 +11,8 @@ const Header = () => {
   const [index, setIndex] = useState(0) //checker for index
   const [isDeleting, setIsDeleting] = useState("false") //checker for deletion
   const [textType, setTextType] = useState('') //words being typed
-  const [typeTime, setTypeTime] = useState(200 - Math.random() * 100) //start time to tyoe, will get halved
-  const wordsToBeRotated = ["Junior Developer","Software Engineer","UI/UX Designor", "College Student"]
+  const [typeTime, setTypeTime] = useState(200) //start time to tyoe, will get halved
+  const wordsToBeRotated = ["Junior Developer","Software Engineer","UI/UX Designer", "College Student"]
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -31,16 +31,16 @@ const Header = () => {
     setTextType(update);
 
     if (isDeleting === "true") {
-      setTypeTime(prevTypeTime => prevTypeTime / 2)
+      setTypeTime(prevTypeTime => prevTypeTime / 1.75)
     }
 
     if (isDeleting === "false" && update === whole) { //not changing to true
-      setTypeTime(1000);
+      setTypeTime(2000);
       setIsDeleting("true");
     } else if (isDeleting === "true" && update === '') {
       setIsDeleting("false");
       setIndex(index + 1);
-      setTypeTime(1000);
+      setTypeTime(200);
     }
   }
 

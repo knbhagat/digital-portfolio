@@ -56,3 +56,24 @@
 .recommendation-writing {
     padding: 1rem 0;
 }
+
+
+@media screen and (max-width : 1024px) {
+    .testimonial-context {
+        padding: 2rem 0rem 1rem;
+    }
+}
+@media  screen and (max-width : 600px) {
+
+    .testimonial-context h6 {
+        font-size: 0.5rem;
+    }
+
+    .testimonial-context h4 {
+        font-size: 0.7rem;
+    }
+
+    .testimonial-context h5 {
+        font-size: 0.6rem;
+    }
+}

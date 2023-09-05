@@ -70,3 +70,19 @@
     position: relative;
     top: 2rem;
 }
+
+@media screen and (max-width: 1024px) {
+    .content-container {
+        padding: 3rem 2rem;
+    }
+
+    .content-container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-container p {
+        font-size: 0.6rem;
+    }
+}
