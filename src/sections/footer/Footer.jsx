@@ -10,7 +10,7 @@ import {AiOutlineProject} from 'react-icons/ai'
 import {MdOutlineRecommend} from 'react-icons/md'
 import {MdOutlinePermContactCalendar} from 'react-icons/md'
 
-const links = [{text : 'Github', link : 'https://github.com/knbhagat', Logo : BsGithub}, {text : 'LinkedIn', link : 'www.linkedin.com/in/krishaan-bhagat', Logo : IoLogoLinkedin}];
+const links = [{text : 'Github', link : 'https://github.com/knbhagat', Logo : BsGithub}, {text : 'LinkedIn', link : 'https://www.linkedin.com/in/krishaan-bhagat/', Logo : IoLogoLinkedin}];
 const nav = [{text : 'Home', Logo : AiOutlineHome, ref : '#header'} , {text : 'About', Logo : SiAboutdotme, ref : '#about'}, {text : 'Skills', Logo : MdWorkOutline, ref : '#experience'}, {text: 'Projects', Logo : AiOutlineProject, ref : '#projects'}, {text : 'Rec', Logo : MdOutlineRecommend, ref : '#testimonials'}, {text : 'Contact', Logo : MdOutlinePermContactCalendar, ref : '#contact'}];
 
 const Footer = () => {
