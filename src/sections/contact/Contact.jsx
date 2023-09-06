@@ -40,11 +40,8 @@ const Contact = () => {
           </div>
           <input type = "text" name = 'name' placeholder = 'Enter Full Name' required className = "input-size input-style"/>
           <div id = "input-seperator">
-            <div id = "email-seperator">
               <input type = "text" name = 'email' placeholder = 'Enter Email' className = "input-size input-style" required />
               <input type = "text" name = 'subject' placeholder = 'Enter Subject' className = "input-size input-style" required/>
-            </div>
-            <input type = "text" name = 'number' placeholder='Enter Number' className = "input-size input-style" id = "phone-input" required = {false} />
           </div>
           <textarea type = 'text' name = 'message' placeholder='Enter Message' rows = "5" required className = 'input-style' />
           <button type = "submit" className = "btn btn-primary">Submit Message</button>

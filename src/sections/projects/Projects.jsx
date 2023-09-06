@@ -1,17 +1,18 @@
 import React from 'react'
 import './projects.css'
 import Video1 from "../../features/PacManGameVideo.mp4"
-import Img1 from "../../features/refereeWebpage.png"
-import Img2 from "../../features/more-pictures.jpg"
-import Img3 from "../../features/more-pictures1.jpg"
+import Img1 from "../../features/projectImg3.png"
+import Img2 from "../../features/projectImg2.png"
+import Img3 from "../../features/projectImg1.png"
+import Img4 from "../../features/projectImg4.png"
 import { useState } from 'react'
 
-const outGoingProjects = [{image : Img1, id : 1, title : 'Webscraping Prizepicks & Comparing Betting Odds', githubLink : "https://github.com/knbhagat/WebScrapingPrizePicksSite.git", button1 : "InProgress"}
-  ,{image : Img1, id : 2, title : 'Soccer Referee Chat AI Bot', githubLink: "https://github.com/knbhagat", button1 : 'InProgress'}
-  ,{image : Img1, id : 3, title : 'Premier League Statistics Line', githubLink : "https://github.com/knbhagat", button1: "InProgress"}];
+const outGoingProjects = [{image : Img3, id : 1, title : 'Webscraping Prizepicks & Comparing Betting Odds', githubLink : "https://github.com/knbhagat/WebScrapingPrizePicksSite.git", button1 : "InProgress"}
+  ,{image : Img3, id : 2, title : 'Soccer Referee Chat AI Bot', githubLink: "https://github.com/knbhagat", button1 : 'InProgress'}
+  ,{image : Img3, id : 3, title : 'Premier League Statistics Line', githubLink : "https://github.com/knbhagat", button1: "InProgress"}];
 
-const smallProjects = [{image : Img1, id : 1, title : 'Notes App', githubLink : "https://github.com/knbhagat/learning-react-project.git", button1 : "Github", demo: "https://learning-react-project-knbhagat.vercel.app/", button2 : "Live Site"}
-  ,{image : Img1, id : 2, title : 'Bouncing DVD Image', githubLink: "https://github.com/knbhagat/dvdImageGame.git", button1 : 'Github', demo : "https://knbhagat.github.io/dvdImageGame/Bouncing.html", button2: "Live Site"}];
+const smallProjects = [{image : Img2, id : 1, title : 'Notes App', githubLink : "https://github.com/knbhagat/learning-react-project.git", button1 : "Github", demo: "https://learning-react-project-knbhagat.vercel.app/", button2 : "Live Site"}
+  ,{image : Img2, id : 2, title : 'Bouncing DVD Image', githubLink: "https://github.com/knbhagat/dvdImageGame.git", button1 : 'Github', demo : "https://knbhagat.github.io/dvdImageGame/Bouncing.html", button2: "Live Site"}];
 
 const majorProjects = [{image : Img1, id : 1, title : 'Referee Assistance Webpage', githubLink : "https://github.com/knbhagat/soccerRefereeWebpage.git", button1 : "Github", demo: "https://knbhagat.github.io/SoccerRefereeWebpage/refereeHomePage.html", button2 : "Live Site"}
 ,{image : Img1, id : 2, title : 'Object Oriented Pac-Man Game', githubLink: "https://github.com/knbhagat/PacManGame.git", button1 : 'Github', demo : Video1 , button2: "Live Demo"}];
@@ -23,7 +24,7 @@ const Projects = () => {
   return (
       <article className = "portfolio-project-item">
       <div className = "portfolio-image">
-        <img src = {Img2} alt = "image2"></img>
+        <img src = {Img4} alt = "image2"></img>
       </div>
       <h3>Other Projects</h3>
       <div className = "button-seperator" >
@@ -45,7 +46,7 @@ const Projects = () => {
         <>
           <article className = "portfolio-project-item">
           <div className = "portfolio-image">
-            <img src = {Img2} alt = "image2"></img>
+            <img src = {Img4} alt = "image2"></img>
           </div>
           <h3>Other Projects</h3>
           <div className = "button-seperator">
@@ -77,7 +78,7 @@ const Projects = () => {
         <>
           <article className = "portfolio-project-item">
           <div className = "portfolio-image">
-            <img src = {Img2} alt = "image3"></img>
+            <img src = {Img4} alt = "image3"></img>
           </div>
           <h3>Other Projects</h3>
           <div className = "button-seperator" id= "change-item2" >
