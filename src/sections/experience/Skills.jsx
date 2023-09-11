@@ -137,6 +137,19 @@ const Skills = () => {
                         <div className = "outer">
                         <div className = "inner">
                             <div className = "percent-num">
+                            60%
+                            </div>
+                        </div>
+                        </div>
+                        <Circle percentage = 'sixty-percent'/>
+                    </div>
+                    <h4 className='text-light'> C </h4>
+                    </div>
+                    <div className = 'experience-specific'>
+                    <div className = "percentage-bar">
+                        <div className = "outer">
+                        <div className = "inner">
+                            <div className = "percent-num">
                             75%
                             </div>
                         </div>
