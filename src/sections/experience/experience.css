@@ -23,6 +23,7 @@
     left: 50%;
     transform: translateX(-50%);
     border: solid 1px #494848;
+    background-color: black; /* CHANGE */
 }
 
 .language-container > h3 {
@@ -30,7 +31,7 @@
 }
  
 .language-container:hover {
-    background-color: transparent;
+    background-color: black; /* CHANGE */
     border-color: var(--color-primary-variant);
     transition: all 1s;
 }
