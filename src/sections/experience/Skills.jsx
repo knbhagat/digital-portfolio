@@ -52,11 +52,11 @@ const Skills = () => {
                         <div className = "outer">
                         <div className = "inner">
                             <div className = "percent-num">
-                            75%
+                            90%
                             </div>
                         </div>
                         </div>
-                        <Circle percentage = 'seventyFive-percent'/>
+                        <Circle percentage = 'ninety-percent'/>
                     </div>
                     <h4 className='text-light'> JavaScript </h4>
                     </div>
@@ -65,11 +65,11 @@ const Skills = () => {
                         <div className = "outer">
                         <div className = "inner">
                             <div className = "percent-num">
-                            60%
+                            90%
                             </div>
                         </div>
                         </div>
-                        <Circle percentage = 'sixty-percent'/>
+                        <Circle percentage = 'ninety-percent'/>
                     </div>
                     <h4 className='text-light'> BootStrap </h4>
                     </div>
@@ -78,11 +78,11 @@ const Skills = () => {
                         <div className = "outer">
                         <div className = "inner">
                             <div className = "percent-num">
-                            75%
+                            90%
                             </div>
                         </div>
                         </div>
-                        <Circle percentage = 'seventyFive-percent'/>
+                        <Circle percentage = 'ninety-percent'/>
                     </div>
                     <h4 className='text-light'> React </h4>
                     </div>
@@ -111,11 +111,11 @@ const Skills = () => {
                         <div className = "outer">
                         <div className = "inner">
                             <div className = "percent-num">
-                                75%
+                                90%
                             </div>
                         </div>
                         </div>
-                        <Circle percentage = "seventyFive-percent" />
+                        <Circle percentage = "ninety-percent" />
                     </div>
                     <h4 className='text-light'> Python </h4>
                     </div>
@@ -137,11 +137,11 @@ const Skills = () => {
                         <div className = "outer">
                         <div className = "inner">
                             <div className = "percent-num">
-                            60%
+                            75%
                             </div>
                         </div>
                         </div>
-                        <Circle percentage = 'sixty-percent'/>
+                        <Circle percentage = 'seventyFive-percent'/>
                     </div>
                     <h4 className='text-light'> C </h4>
                     </div>
@@ -163,11 +163,11 @@ const Skills = () => {
                         <div className = "outer">
                         <div className = "inner">
                             <div className = "percent-num">
-                            60%
+                            75%
                             </div>
                         </div>
                         </div>
-                        <Circle percentage = 'sixty-percent'/>
+                        <Circle percentage = 'seventyFive-percent'/>
                     </div>
                     <h4 className='text-light'> MongoDB </h4>
                     </div>

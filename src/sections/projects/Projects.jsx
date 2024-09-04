@@ -16,7 +16,7 @@ const smallProjects = [{image : Img2, id : 1, title : 'Notes App', githubLink : 
 
 const majorProjects = [
   {image : Img1, id : 1, title : 'SettleSmart Wep App - Hackathon', githubLink : "https://github.com/knbhagat/Hackathon-V1.git", button1 : "Github", demo: "https://mediaspace.esri.com/media/1_l193ns7v?kalturaSeekFrom=2755&kalturaClipTo=3330", button2 : "Live Demo"},
-  {image : Img1, id : 2, title : 'Referee Assistance Webpage', githubLink : "https://github.com/knbhagat/soccerRefereeWebpage.git", button1 : "Github", demo: "https://knbhagat.github.io/SoccerRefereeWebpage/refereeHomePage.html", button2 : "Live Site"},
+  {image : Img1, id : 2, title : 'Referee Assistance Webpage', githubLink : "https://github.com/knbhagat/soccerRefereeWebpage.git", button1 : "Github", demo: "https://soccer-referee-app.vercel.app", button2 : "Live Site"},
   {image : Img1, id : 3, title : 'Object Oriented Pac-Man Game', githubLink: "https://github.com/knbhagat/PacManGame.git", button1 : 'Github', demo : Video1 , button2: "Live Demo"}];
 
 
